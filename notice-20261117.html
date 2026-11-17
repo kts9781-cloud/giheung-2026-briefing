@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:title" content="기흥회 추가 회비 안내">
-  <meta property="og:description" content="1인당 50만 원 추가 입금 안내 · 찬조 완료 및 예정 회원 제외 · 회비 현황과 지출 계획">
+  <meta property="og:description" content="추가 회비 대상 9명 · 1인당 50만 원 · 찬조 회원 제외 · 회비 현황과 최종 예상 정산">
   <title>기흥회 추가 회비 안내 · 2026</title>
   <style>
     :root{--green:#183f34;--green-deep:#102e27;--cream:#f5f5ef;--paper:#fffefa;--gold:#c5aa72;--ink:#20382f;--muted:#64736b;--line:#dce3d9;--light-green:#edf2e9;--red:#9b4634;--light-red:#fbf0e8;--radius:20px;--shadow:0 14px 36px rgba(24,63,52,.05)}
@@ -68,8 +68,8 @@
     .metric .value strong{font-size:clamp(25px,2.9vw,33px);letter-spacing:-.045em;font-weight:750}
     .metric .value span{font-size:16px;font-weight:650}
     .metric .detail{font-size:13px;color:var(--muted);margin:9px 0 0}
-    .metric.deficit{background:var(--light-red);border-color:#ebd2c5;color:var(--red)}
-    .metric.deficit .label,.metric.deficit .detail{color:#8b5345}
+    .metric.carry-forward{background:#e4eddf;border-color:#bfd0b9;color:var(--green)}
+    .metric.carry-forward .label,.metric.carry-forward .detail{color:#426047}
     .basis-note{margin-top:16px;display:flex;gap:11px;align-items:flex-start;background:#e9eee4;border-radius:12px;padding:15px 19px;font-size:14px;color:#465e4e;line-height:1.8}
     .basis-note svg{width:18px;height:18px;flex:none;margin-top:3px}
     .basis-note p{margin:0}
@@ -143,14 +143,14 @@
       .payment{padding:23px 24px}.payment-label{font-size:14px}.fee{margin:7px 0 14px}.fee strong{font-size:58px}.fee span{font-size:22px}.exemption{padding-bottom:16px;font-size:14px}.account-label{margin-top:15px;font-size:13px}.account-number{font-size:24px;margin-bottom:14px}
       .nav{justify-content:space-between;gap:8px;min-height:58px;font-size:13px;flex-wrap:nowrap}.nav a{white-space:nowrap}
       main{padding-block:32px 38px}section{margin-bottom:38px}.section-heading{margin-bottom:18px}.section-heading h2{font-size:24px}.section-kicker{font-size:11px}.section-sub{font-size:14px}
-      .summary-grid{grid-template-columns:1fr 1fr;gap:11px}.metric{padding:18px 16px;border-radius:15px}.metric .label{font-size:13px;margin-bottom:9px}.metric .value{gap:2px}.metric .value strong{font-size:clamp(20px,5.5vw,29px);letter-spacing:-.055em}.metric .value span{font-size:13px}.metric .detail{font-size:12px;line-height:1.7;margin-top:6px}.metric.deficit{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:3px 12px;align-items:center;padding:19px 19px}.metric.deficit .label{font-size:14px;margin:0}.metric.deficit .value{grid-column:2;grid-row:1/3}.metric.deficit .value strong{font-size:32px}.metric.deficit .value span{font-size:15px}.metric.deficit .detail{grid-column:1;margin:0;font-size:12px}
+      .summary-grid{grid-template-columns:1fr 1fr;gap:11px}.metric{padding:18px 16px;border-radius:15px}.metric .label{font-size:13px;margin-bottom:9px}.metric .value{gap:2px}.metric .value strong{font-size:clamp(20px,5.5vw,29px);letter-spacing:-.055em}.metric .value span{font-size:13px}.metric .detail{font-size:12px;line-height:1.7;margin-top:6px}.metric.carry-forward{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:3px 12px;align-items:center;padding:19px 19px}.metric.carry-forward .label{font-size:14px;margin:0}.metric.carry-forward .value{grid-column:2;grid-row:1/3}.metric.carry-forward .value strong{font-size:32px}.metric.carry-forward .value span{font-size:15px}.metric.carry-forward .detail{grid-column:1;margin:0;font-size:12px}
       .basis-note{padding:14px 15px;font-size:13px;gap:9px}.funds{grid-template-columns:1fr;gap:14px;margin-top:18px}.fund-breakdown{padding:21px;border-radius:16px}.money-row{gap:7px 12px;padding-block:14px}.money-row dt{font-size:15px}.money-row dd{font-size:16px}.money-row.total dt,.money-row.total dd{font-size:17px}.row-note{font-size:12px}.carry-note{padding:21px;border-radius:16px}.carry-value{font-size:24px}.carry-note p:last-child{font-size:13px}
       .expense-grid{grid-template-columns:1fr;gap:18px}.expense-card{border-radius:17px}.expense-card header{padding:21px 22px 19px}.expense-card h3{font-size:20px}.group-total{font-size:28px}.expense-card dl{padding:4px 22px 8px}.expense-card .money-row{grid-template-columns:minmax(0,1fr) auto;column-gap:12px;padding-block:16px}.expense-card .money-row dd{font-size:17px;align-self:start}.expense-card .money-row dt{font-size:15px}.expense-card .row-note{font-size:12px;line-height:1.8;margin-top:6px}.expense-total{padding:17px 20px;flex-wrap:wrap;gap:6px}.expense-total .label{font-size:15px}.expense-total .amount{font-size:25px;margin-left:auto}.footnote{font-size:12px}
       .donation-layout{grid-template-columns:1fr;gap:18px}.donation-table th,.donation-table td{padding:13px 22px}.donation-table{font-size:16px;border-radius:17px}.thanks{margin:0;padding:28px 26px;min-height:0}.thanks .thin-rule{margin-bottom:17px}.thanks h3{font-size:24px;margin-bottom:14px}.thanks p{font-size:15px;line-height:1.85}.thanks h3 br{display:none}
       .context{padding:25px 22px;border-radius:17px}.context p{line-height:1.95;margin-bottom:20px}.context .accent{font-size:15px;padding:17px 18px}.closing{margin-top:22px;padding-top:21px}
       .bottom-actions{align-items:flex-start;flex-direction:column;gap:17px}.bottom-actions .buttons{width:100%}.bottom-actions .button{flex:1;font-size:14px}.bottom-actions p{font-size:13px}.footer-content{display:block}.footer-content span{display:block;margin-top:4px;font-size:12px}.toast{bottom:18px;width:max-content;max-width:calc(100% - 32px);font-size:14px}
     }
-    @media(max-width:370px){.wrap{width:calc(100% - 28px)}.payment{padding:22px}.account-number{font-size:22px}.metric{padding:17px 13px}.metric.deficit{grid-template-columns:1fr}.metric.deficit .value{grid-column:1;grid-row:auto;margin-top:5px}.metric.deficit .detail{grid-row:3}.metric .value strong{font-size:21px}.metric.deficit .value strong{font-size:33px}.expense-card .money-row{grid-template-columns:1fr;gap:4px}.expense-card .money-row dd{font-size:20px}.money-row.total{column-gap:8px}.money-row.total dt,.money-row.total dd{font-size:16px}.nav{font-size:12px;gap:6px}}
+    @media(max-width:370px){.wrap{width:calc(100% - 28px)}.payment{padding:22px}.account-number{font-size:22px}.metric{padding:17px 13px}.metric.carry-forward{grid-template-columns:1fr}.metric.carry-forward .value{grid-column:1;grid-row:auto;margin-top:5px}.metric.carry-forward .detail{grid-row:3}.metric .value strong{font-size:21px}.metric.carry-forward .value strong{font-size:33px}.expense-card .money-row{grid-template-columns:1fr;gap:4px}.expense-card .money-row dd{font-size:20px}.money-row.total{column-gap:8px}.money-row.total dt,.money-row.total dd{font-size:16px}.nav{font-size:12px;gap:6px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
     @media print{
       @page{size:A4;margin:16mm}
@@ -175,7 +175,7 @@
         <aside class="payment" aria-labelledby="payment-title">
           <h2 class="payment-label" id="payment-title">추가 입금 금액 · 1인당</h2>
           <div class="fee"><strong>50</strong><span>만 원</span></div>
-          <p class="exemption"><strong>이미 찬조하셨거나 찬조 예정이신 회원님은 제외됩니다.</strong></p>
+          <p class="exemption"><strong>이미 찬조하셨거나 찬조 예정이신 회원님은 제외됩니다.</strong><span class="row-note">전체 16명 중 찬조 회원 7명 제외 · 대상 9명<br>9명 × 50만 원 = 추가 회비 총 450만 원</span></p>
           <p class="account-label">기흥회 찬조금 입금 계좌 · 기업은행</p>
           <span class="account-number" id="account-number">079-128340-01-011</span>
           <button class="button primary" type="button" data-copy-account>
@@ -195,27 +195,29 @@
     <section id="overview" aria-labelledby="overview-title">
       <div class="section-heading"><div><div class="section-kicker">01 · 회비 현황</div><h2 id="overview-title">한눈에 보는 현재 상황</h2><p class="section-sub">납회 비용부터 마지막 월례회와 연말 회식까지 반영했습니다.</p></div></div>
       <div class="summary-grid">
-        <article class="metric"><h3 class="label">잔액 + 찬조금</h3><p class="value"><strong data-money="funds">14,177,840</strong><span>원</span></p><p class="detail">찬조금 전액 입금 기준</p></article>
+        <article class="metric"><h3 class="label">총 재원 예상액</h3><p class="value"><strong data-money="funds">19,977,840</strong><span>원</span></p><p class="detail">찬조·미납·추가 회비 입금 기준</p></article>
         <article class="metric"><h3 class="label">총지출 예정액</h3><p class="value"><strong data-money="expenseTotal">19,374,000</strong><span>원</span></p><p class="detail">납회 정산 및 이후 지출 포함</p></article>
-        <article class="metric deficit"><h3 class="label">예상 부족액</h3><p class="value"><strong data-money="shortfall">5,196,160</strong><span>원</span></p><p class="detail">추가 회비 반영 전</p></article>
+        <article class="metric carry-forward"><h3 class="label">최종 예상 이월금</h3><p class="value"><strong data-money="carryForward">603,840</strong><span>원</span></p><p class="detail">연말 회식까지 마친 뒤</p></article>
       </div>
       <div class="basis-note">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></svg>
-        <p><strong>계산 기준</strong> · 찬조금 1,100만 원이 모두 입금되는 기준입니다. 회원별 <strong>50만 원 추가 회비 수입은 아직 포함하지 않았습니다.</strong></p>
+        <p><strong>계산 기준</strong> · 찬조금 1,100만 원, 기존 미납 회비 130만 원, <strong>추가 회비 450만 원(9명 × 50만 원)</strong>이 모두 입금되고 계획한 금액대로 지출하는 경우입니다. 입금 예정액을 포함한 예상 정산입니다.</p>
       </div>
       <div class="funds">
         <div class="fund-breakdown">
-          <h3 class="small-heading">보유 금액과 찬조금</h3>
+          <h3 class="small-heading">보유 금액과 입금 예정액</h3>
           <dl>
             <div class="money-row"><dt>현재 잔액<span class="row-note">골프장 예치금 1,930,000원 포함</span></dt><dd><span data-money="balance">3,177,840</span>원</dd></div>
             <div class="money-row"><dt>찬조금 합계<span class="row-note">찬조 내역 7명 기준</span></dt><dd><span data-money="donationTotal">11,000,000</span>원</dd></div>
-            <div class="money-row total"><dt>합계</dt><dd><span data-money="funds">14,177,840</span>원</dd></div>
+            <div class="money-row"><dt>기존 미납 회비<span class="row-note">회원 1명 · 마지막 월례회 수금 예정</span></dt><dd><span data-money="receivable">1,300,000</span>원</dd></div>
+            <div class="money-row"><dt>추가 회비<span class="row-note">16명 중 찬조 회원 7명 제외<br>9명 × 50만 원 · 입금 예정</span></dt><dd><span data-money="additionalTotal">4,500,000</span>원</dd></div>
+            <div class="money-row total"><dt>예상 합계</dt><dd><span data-money="funds">19,977,840</span>원</dd></div>
           </dl>
         </div>
         <aside class="carry-note" aria-labelledby="carry-title">
           <h3 id="carry-title" class="caption">참고 · 작년에서 올해로 받은 이월금</h3>
           <p class="carry-value"><span data-money="previousCarry">3,591,887</span>원</p>
-          <p>올해 운영을 시작하며 받은 금액입니다.<br>현재 잔액에 다시 더하지 않았습니다. 추가 회비로 올해 비용을 정산하고, 남는 금액은 내년도 운영자금으로 이월할 예정입니다.</p>
+          <p>올해 운영을 시작하며 받은 금액으로, 현재 잔액에 다시 더하지 않았습니다.<br>이번 계획대로 입금과 지출을 마치면 <strong>603,840원</strong>을 내년도 운영자금으로 이월할 수 있습니다.</p>
         </aside>
       </div>
     </section>
@@ -242,6 +244,7 @@
         </article>
       </div>
       <div class="expense-total"><span class="label">전체 지출 예정액</span><span class="amount"><span data-money="expenseTotal">19,374,000</span><small>원</small></span></div>
+      <div class="basis-note"><p><strong>최종 예상 정산</strong><br>총 재원 <span data-money="funds">19,977,840</span>원 − 총지출 <span data-money="expenseTotal">19,374,000</span>원<br><strong>내년도 예상 이월금 <span data-money="carryForward">603,840</span>원</strong><br>연말 회식비 1,500,000원까지 모두 반영했습니다.</p></div>
       <p class="footnote">위 금액은 현재 제공된 납회 정산 금액과 향후 예상 비용을 반영한 계획입니다. 최종 지출은 실제 정산에 따라 달라질 수 있습니다. 시상상품은 미리 안내드린 대로 최대한 줄여 준비하고 있습니다.</p>
     </section>
 
@@ -276,7 +279,8 @@
       <div class="context">
         <p>지난 납회에서는 <strong>올해 운영비를 함께 부담하고, 남는 금액은 내년으로 이월해 사용하자</strong>는 취지로 1인당 50만 원의 추가 회비를 논의했습니다.</p>
         <p>당시 석지점장님께서도 납회 비용을 약 800만 원으로 계산하면, 참석한 16명이 1인당 50만 원씩 부담하는 것으로 하면 어떻겠느냐는 의견을 주셨습니다. 반대 의견도 있었지만, 다수 회원님의 의견을 바탕으로 추가 회비를 걷는 방향으로 정리한 사항입니다.</p>
-        <p class="accent">현재 계획대로라면 찬조금 1,100만 원을 모두 반영해도 <strong><span data-money="shortfall">5,196,160</span>원이 부족</strong>합니다. 회원별 50만 원 추가 회비로 올해 남은 비용을 정산하고, 남는 금액은 내년도 운영자금으로 이월할 예정입니다.</p>
+        <p>찬조금 1,100만 원과 기존 미납 회비 130만 원을 모두 반영해도, 추가 회비를 걷기 전에는 <strong><span data-money="shortfallBeforeAdditional">3,896,160</span>원이 부족</strong>합니다. 전체 16명 중 찬조 회원 7명을 제외한 <strong>9명이 50만 원씩, 총 450만 원</strong>을 납부해 주시면 올해 남은 비용을 정산할 수 있습니다.</p>
+        <p class="accent">찬조금과 미납·추가 회비가 모두 입금되고 계획한 금액대로 지출하면, <strong>연말 회식까지 마친 뒤 <span data-money="carryForward">603,840</span>원</strong>이 남습니다. 이 금액은 내년도 운영자금으로 이월할 예정입니다.</p>
         <p>추가 부담을 드리는 점은 잘 알고 있습니다만, 올해 일정을 원활하게 마무리할 수 있도록 집행부의 운영 취지를 이해해 주시고 협조해 주시길 간곡히 부탁드립니다.</p>
         <div class="closing"><p>이미 찬조하셨거나 찬조 예정이신 회원님은<br>50만 원 추가 입금 대상에서 제외됩니다.</p><p>찬조와 협조에 감사드립니다.</p></div>
       </div>
@@ -298,6 +302,9 @@
       "depositIncluded":1930000,
       "previousCarry":3591887,
       "additionalFee":500000,
+      "memberCount":16,
+      "additionalPayingMembers":9,
+      "receivable":1300000,
       "account":{"bank":"기업은행","number":"079-128340-01-011"},
       "donations":[{"name":"김광선","amount":3000000},{"name":"최영환","amount":2500000},{"name":"윤광렬","amount":2000000},{"name":"남상만","amount":1000000},{"name":"김기영","amount":1000000},{"name":"김태성","amount":1000000},{"name":"석승자","amount":500000}],
       "expenses":{"pastGolf":7519000,"gift":100000,"pastDinner":1655000,"awards":2100000,"trophy":500000,"novGolf":6000000,"yearEndDinner":1500000}
@@ -308,14 +315,18 @@
       'use strict';
       var data=JSON.parse(document.getElementById('notice-data').textContent);
       var donationTotal=data.donations.reduce(function(sum,entry){return sum+entry.amount;},0);
+      var additionalTotal=data.additionalPayingMembers*data.additionalFee;
+      var fundsBeforeAdditional=data.balance+donationTotal+data.receivable;
       var values=Object.assign({},data.expenses,{
         balance:data.balance,previousCarry:data.previousCarry,donationTotal:donationTotal,
-        funds:data.balance+donationTotal,
+        receivable:data.receivable,additionalTotal:additionalTotal,
+        funds:fundsBeforeAdditional+additionalTotal,
         pastTotal:data.expenses.pastGolf+data.expenses.gift+data.expenses.pastDinner,
         futureTotal:data.expenses.awards+data.expenses.trophy+data.expenses.novGolf+data.expenses.yearEndDinner
       });
       values.expenseTotal=values.pastTotal+values.futureTotal;
-      values.shortfall=values.expenseTotal-values.funds;
+      values.shortfallBeforeAdditional=values.expenseTotal-fundsBeforeAdditional;
+      values.carryForward=values.funds-values.expenseTotal;
       var formatter=new Intl.NumberFormat('ko-KR');
       document.querySelectorAll('[data-money]').forEach(function(node){var key=node.getAttribute('data-money');if(typeof values[key]==='number'){node.textContent=formatter.format(values[key]);}});
       document.querySelectorAll('[data-donation]').forEach(function(node){var entry=data.donations.find(function(item){return item.name===node.getAttribute('data-donation');});if(entry){node.textContent=formatter.format(entry.amount/10000);}});
